@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Surprise for You!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="backgroundMusic" loop></audio>
+
+    <div id="page1" class="page-container active">
+        <h1>My dear madam ji pesh h apke liye ek surpriseee ❤️</h1>
+        <form id="surpriseForm">
+            <label for="nameInput">What is your name? 😊</label>
+            <input type="text" id="nameInput" required>
+            <label for="passwordInput">Enter your unique password:</label>
+            <input type="password" id="passwordInput" required>
+            <label for="songSelect">Choose a song you love: ✨</label>
+            <select id="songSelect">
+                <option value="assets/lofi-chill-beats.mp3">Lofi Chill Beats</option>
+                <option value="assets/bollywood-lofi.mp3">Bollywood Lofi</option>
+                <option value="assets/relaxing-piano.mp3">Relaxing Piano</option>
+            </select>
+            <button type="submit">Let's go! 👉</button>
+        </form>
+    </div>
+
+    <div id="page2" class="page-container hidden">
+        <div class="roller-container">
+            <div class="roller-images">
+                <img src="assets/image1.jpg" alt="Image 1">
+                <img src="assets/image2.jpg" alt="Image 2">
+                <img src="assets/image3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <div class="poetry-container">
+            <p class="poetry-line">"Whoever sits to gaze at you, finds even a lifetime too short,
+            </p>
+            <p class="poetry-line">let alone an evening. You are so beautiful that in your presence, ✨</p>
+            <p class="poetry-line"> every beautiful thing in the world seems like an illusion to me.".</p>
+        </div>
+        <button id="nextPageTwo">Next Page ➡️</button>
+    </div>
+
+    <div id="page3" class="page-container hidden">
+        <div class="question-container">
+            <p>Do you want to see the most beautiful girl in the world? 😍</p>
+            <button id="yesBtn">Yes! 💖</button>
+            <button id="noBtn">No... 😔</button>
+        </div>
+        <div class="reveal-content hidden">
+            <img src="assets/your-photo.jpg" alt="The Most Beautiful Girl" class="beautiful-girl-img">
+            <p class="final-poetry">तेरे आँखों के सामने यह शहर कौन देखेगा, तू दरिया सी है यह लहर कौन देखेगा तू खूबसूरत से भी ज्यादा खूबसूरत है तुझे देखने के बाद यह दुनिया कौन देखेगा। Who will gaze at this city in front of your eyes? You are like an ocean, who will notice the
+                waves? You are more beautiful than beauty itself, After seeing you, who will care about the world?</p>
+            <div class="final-images-container">
+                <img src="assets/image4.jpg" alt="Final Image 1" class="crystal-img">
+                <img src="assets/image5.jpg" alt="Final Image 2" class="crystal-img">
+            </div>
+            <button id="finishBtn">Finish 🔚</button>
+        </div>
+        <div class="no-option-message hidden">
+            <p>Sorryy this option is not working bcz u are the most beautiful in the world. If u dont take my words seriously, then see with my eyes. bcz....How can I ignore you when I have so much pride? And how can I gaze at you from the front with full
+                satisfaction when my eyes have so much light?" "तुझे नज़रअंदाज़ करूं मैं में इतना गुरूर कहा। और तुझे देख पाऊं सामने से जी भर के मेरी आँखों में इतना नूर कहा।" 😌
+
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
